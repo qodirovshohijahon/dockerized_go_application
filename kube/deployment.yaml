@@ -1,21 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: go_deployment
+  name: godeployment
+  namespace: myns
   labels:
-    app: go_application
+    app: goapp
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
-      app: go_application
+      app: goapp
   template:
     metadata:
       labels:
-        app: go_application
+        app: goapp
     spec:
       containers:
-      - name: go_app_container
+      - name: gocontainer
         image: sherqodirov/go_demo_app
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
+      imagePullSecrets:
+      - name: regcred        
