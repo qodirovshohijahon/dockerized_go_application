@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: go_application
-        image: nginx:1.14.2
+        image: sherqodirov/go_demo_app
         ports:
         - containerPort: 80
