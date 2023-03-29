@@ -7,3 +7,9 @@ docker run -p 8080:8080 --name=go_app go_demo_app
 
 
 docker tag go_demo_app sherqodirov/go_demo_app
+
+
+
+#### K8s deployment
+To create namespace - kubectl apply -f kube/ns.yaml
+
