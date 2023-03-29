@@ -25,3 +25,8 @@ kubectl create secret docker-registry regcred \
 
 
 kubectl config set-context --current --namespace=
+
+
+#Troubkeshooting
+
+`kubectl exec --stdin --tty shell-demo -- /bin/bash`
