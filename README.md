@@ -1,0 +1,1 @@
+# dockerized_go_application
